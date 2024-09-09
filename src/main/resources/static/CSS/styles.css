@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: #6600ff;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px;
+    color: #555;
+}
+
+/* Styling for header-image container */
+.header-pic {
+    position: relative; /* Gør det muligt at positionere elementer indenfor denne container */
+    width: 1700px; /* Samme som billedets bredde */
+    height: 600px; /* Samme som billedets højde */
+}
+
+.header-pic img {
+    width: 100%; /* Sørger for at billedet fylder hele containeren */
+    height: 100%; /* Sørger for at billedet fylder hele containeren */
+    object-fit: cover; /* Sørger for at billedet dækker hele containeren uden at deformere */
+}
+
+.header-pic h1 {
+    position: absolute; /* Gør det muligt at placere teksten ovenpå billedet */
+    top: 80%; /* Placerer teksten midt på containerens højde */
+    left: 50%; /* Placerer teksten midt på containerens bredde */
+    transform: translate(-50%, -50%); /* Justerer for at centere teksten præcist */
+    color: white; /* Tekstfarve for god kontrast mod billedet */
+    font-size: 5rem; /* Størrelse på teksten */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.91); /* Giver en skyggeeffekt for bedre læsbarhed */
+    margin: 0; /* Fjerner standardmarginen på h1 */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Skaber 3 kolonner af lige størrelse */
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px; /* Tilføjer mellemrum mellem kolonnerne */
+    padding: 5px; /* Tilføjer polstring omkring grid-containeren */
+}
+
+.attraction {
+    text-align: center; /* Centrerer indholdet inden i hver kolonne */
+    padding: 10px; /* Tilføjer polstring inde i hver attraktion */
+}
+
+.attraction img {
+    max-width: 100%; /* Sørger for, at billedet tilpasser sig containerens bredde */
+    height: auto; /* Bevarer billedets oprindelige proportioner */
+}
+
+
+/* Styling for form-section */
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Styling for form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for form-group to align labels and inputs */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input styling */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6a768c;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a93a8;
+}

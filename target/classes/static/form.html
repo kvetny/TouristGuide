@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hjælp os!</title>
+    <link href="CSS/styles.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<section>
+    <h2>Har du en god idé til en spændende turistattraktion?</h2>
+    <p>Vi vil hjertens gerne høre om dine yndlingssteder og skjulte perler i København.
+        Hjælp os ved at udfylde denne formular!</p>
+
+    <form action="http://localhost:8080/attractions/add" method="post">
+        <div class="form-group">
+            <label for="name">Attraktionens navn:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Beskrivelse:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send din idé</button>
+    </form>
+
+</section>
+
+
+</body>
+</html>

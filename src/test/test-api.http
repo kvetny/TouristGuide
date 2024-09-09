@@ -1,0 +1,7 @@
+POST http://localhost:8080/attractions/add
+Content-Type: application/json
+
+{
+  "name": "Ny Attraktion",
+  "description": "En beskrivelse af den nye attraktion"
+}
